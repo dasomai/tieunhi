@@ -11,7 +11,7 @@ def translate(text, direction):
     elif direction == 'en_vi':
       translated_text = translator.translate(text, dest='vi', src='en').text
   except:
-      translated_text = ''
+      translated_text = ""
 
 
 

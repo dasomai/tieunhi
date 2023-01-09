@@ -57,14 +57,12 @@ def vibot():
         user_input = speech2text()
         
 
-        if(user_input == "" or user_input.lower == "dừng lại."):
+        yousaid = translate(user_input, 'vi_en')
+        print("Nobita: " + user_input)
+        if(yousaid == "" or yousaid.lower == "goodbye"):
             # text2speech("Bái bai!!")
             playSound("baibaia.mp3")
             break
-        
-        yousaid = translate(user_input, 'vi_en')
-        
-
         
         
         botrep = chatbot(yousaid)
@@ -100,6 +98,8 @@ def main():
             keyword_index = porcupine.process(pcm)
             if keyword_index >= 0: ###the fun game happen here
                 print("Hotword Detected .. ", end="")
+                playSound("listening.mp3")
+
                 playSound('daemday.mp3')
                 # speak("I'm here sir")
                 # time.sleep(1)
