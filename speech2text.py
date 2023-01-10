@@ -33,7 +33,7 @@ def speech2text():
     p = pyaudio.PyAudio()  # Create an interface to PortAudio
 
     print('Recording')
-    playSound("listening.mp3")
+    playSound("sounds/listening.mp3")
 
     stream = p.open(format=sample_format,
                     channels=channels,
@@ -55,7 +55,7 @@ def speech2text():
     p.terminate()
 
 
-    playSound("done.mp3")
+    playSound("sounds/done.mp3")
 
     print('Finished recording')
 

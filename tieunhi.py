@@ -13,7 +13,7 @@ import pvporcupine
 import pygame
 
 
-USER = "sir"
+USER = "Nobita"
 
 def playSound(filename):
     pygame.init()
@@ -58,10 +58,9 @@ def vibot():
         
 
         yousaid = translate(user_input, 'vi_en')
-        print("Nobita: " + user_input)
         if(yousaid == "" or yousaid.lower == "goodbye"):
             # text2speech("Bái bai!!")
-            playSound("baibaia.mp3")
+            playSound("sounds/baibaia.mp3")
             break
         
         
@@ -98,9 +97,9 @@ def main():
             keyword_index = porcupine.process(pcm)
             if keyword_index >= 0: ###the fun game happen here
                 print("Hotword Detected .. ", end="")
-                playSound("listening.mp3")
+                playSound("sounds/listening.mp3")
 
-                playSound('daemday.mp3')
+                playSound('sounds/daemday.mp3')
                 # speak("I'm here sir")
                 # time.sleep(1)
                 print("J.A.R.V.I.S..: Awaiting your call " + USER)
