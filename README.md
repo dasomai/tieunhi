@@ -47,7 +47,7 @@ python tieunhi.py
 ```
 Say nothing and the bot will disappear and say ```Javis``` to summon again
 
-# What i will do with this chatbot in future
+# What I will do with this chatbot in the future
 ```
 Can talk with Vietnamese Southearn dialect 
 Train chatbot to be more interesting with sense of humor
