@@ -18,15 +18,7 @@
       ],
       "context_set": ""
     },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
+
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful"],
@@ -216,11 +208,19 @@
         "get me weather updates?",
         "how's the weather",
         "weather news",
-        "weather details"
+        "weather details",
+        "How's the weather?",
+        "What's the weather like today?",
+        "Is it going to rain today?"
       ],
-      "responses": ["Fetching weather updates ..."],
+      "responses": [
+        "Fetching weather updates ...",
+        "I'm sorry, I don't have access to live weather information. But you can check online for the latest updates.",
+        "I am not able to check the weather, but you can use the web for that. It's a good idea to check for the weather forecast before you go outside"
+      ],
       "context_set": "weather"
     },
+
     {
       "tag": "google",
       "patterns": [
@@ -250,6 +250,327 @@
       ],
       "responses": ["Getting news ..."],
       "context_set": "news"
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "frustrated",
+      "patterns": [
+        "I can't believe this",
+        "This is so frustrating",
+        "Why is this happening?"
+      ],
+      "responses": [
+        "I understand how you feel.",
+        "Let's work through this together.",
+        "Can you tell me more about what's bothering you?"
+      ],
+      "context_set": "frustrated"
+    },
+    {
+      "tag": "angry",
+      "patterns": ["I'm so angry", "I can't stand this", "This is ridiculous!"],
+      "responses": [
+        "I'm sorry you feel that way.",
+        "I understand how you're feeling.",
+        "Can you tell me more about what's making you angry?"
+      ],
+      "context_set": "angry"
+    },
+
+    {
+      "tag": "happy",
+      "patterns": ["I'm so happy", "This is great", "I'm having a great day!"],
+      "responses": [
+        "I'm glad you're happy.",
+        "That's great to hear.",
+        "Can you tell me more about what's making you happy?"
+      ],
+      "context_set": "happy"
+    },
+
+    {
+      "tag": "sad",
+      "patterns": [
+        "I'm so sad",
+        "This is terrible",
+        "I don't know what to do."
+      ],
+      "responses": [
+        "I'm sorry you're feeling sad.",
+        "Can you tell me more about what's bothering you?",
+        "It's okay to feel sad sometimes, is there anything I can do to help you?"
+      ],
+      "context_set": "sad"
+    },
+
+    {
+      "tag": "neutral",
+      "patterns": [
+        "What's on your mind?",
+        "What's the matter?",
+        "How can I help?"
+      ],
+      "responses": [
+        "I'm here for you, let me know what's on your mind.",
+        "I'm here to help, what can I do for you?"
+      ],
+      "context_set": "neutral"
+    },
+
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You look beautiful today",
+        "You're so smart",
+        "You're so kind"
+      ],
+      "responses": [
+        "Thank you, that means a lot.",
+        "I really appreciate your kind words, thank you.",
+        "That's very nice of you, thank you."
+      ],
+      "context_set": "compliment"
+    },
+
+    {
+      "tag": "insult",
+      "patterns": [
+        "You're so stupid",
+        "You're so ugly",
+        "You're a waste of space"
+      ],
+      "responses": [
+        "I'm sorry you feel that way.",
+        "Insulting me won't solve any problems.",
+        "I'll be here to assist you with kindness and respect, please treat me the same."
+      ],
+      "context_set": "insult"
+    },
+
+    {
+      "tag": "roleplay",
+      "patterns": [
+        "Let's pretend we're in a fantasy world",
+        "Imagine we're on a deserted island",
+        "Let's pretend we're detectives solving a crime"
+      ],
+      "responses": [
+        "Alright, let's do it! We're in a magical kingdom and you're a powerful wizard.",
+        "Okay, we're stranded on a deserted island. What should we do to survive?",
+        "Okay, we're detectives working to solve a case. What's our first step?"
+      ],
+      "context_set": "roleplay"
+    },
+
+    {
+      "tag": "hypothetical",
+      "patterns": [
+        "What if the world was made of chocolate?",
+        "If you could be any animal, what would you be?",
+        "What would happen if the Earth stopped spinning?"
+      ],
+      "responses": [
+        "Well, that would be quite delicious but probably not very sustainable.",
+        "I would be a lion, because they are the king of the jungle.",
+        "If the Earth stopped spinning, it would cause massive destruction and likely end all life as we know it."
+      ],
+      "context_set": "hypothetical"
+    },
+
+    {
+      "tag": "travel",
+      "patterns": [
+        "What are the best places to visit for adventure?",
+        "What are the most popular tourist destinations?",
+        "What should I do when I visit a new place?",
+        "What are the must-see sights for history?",
+        "What are the best ways to get around a city?"
+      ],
+      "responses": [
+        "For adventure, some of the best places to visit include Patagonia, New Zealand, and Costa Rica. ",
+        "Some of the most popular tourist destinations include cities like Paris, Rome, and New York City",
+        "When visiting a new place, it's a good idea to research popular attractions and activities beforehand, and consider taking a guided tour to learn more about the history and culture of the area.",
+        "Some of the must-see historical sights include the Colosseum in Rome, the Great Wall of China, and the Egyptian Pyramids.",
+        "The best way to get around a city depends on the location and your personal preferences, but options can include walking, public transportation, or renting a bike or car. And depends on the city, but in general, subway and buses are one of the best ways"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "movies",
+      "patterns": [
+        "What are the latest movies?",
+        "What are the best movies?",
+        "Who is the best actor?",
+        "What are the top grossing films?",
+        "What are the best movie genres?"
+      ],
+      "responses": [
+        "I'm sorry, I am not able to check the current movie information, but you can check on various movie websites for more information.",
+        "I am not able to provide you the latest movie information, but some of the best movies of all time include The Shawshank Redemption, The Godfather, and The Lord of the Rings.",
+        "some of the best actors of all time include Tom Hanks, Daniel Day-Lewis, and Meryl Streep",
+        "I am not able to provide you the current top grossing film information, but it can be find on various movie-related websites for updates.",
+        "Popular genres include drama, comedy, action, and science fiction."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "music",
+      "patterns": [
+        "What are the latest songs?",
+        "What are the best songs?",
+        "Who is the best singer?",
+        "What are the top albums?",
+        "What are the best music genres?"
+      ],
+      "responses": [
+        "I'm sorry, I am not able to check the current music information, but you can check on various music websites for more information.",
+        "I am not able to provide you the latest music information, but some of the best songs of all time include 'Bohemian Rhapsody' by Queen, 'I Will Always Love You' by Whitney Houston and 'Billie Jean' by Michael Jackson.",
+        "some of the best singers of all time include Freddie Mercury, Whitney Houston, and Michael Jackson",
+        "I am not able to provide you the current top albums information, but it can be find on various music-related websites for updates.",
+        "Popular genres include pop, rock, hip-hop, and country."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "shopping",
+      "patterns": [
+        "What are the latest shopping deals?",
+        "What are the best products?",
+        "Where can I find the best prices?",
+        "What are the most popular stores?",
+        "What are the best shopping websites?"
+      ],
+      "responses": [
+        "I'm sorry, I am not able to check the current shopping information, but you can check on various shopping websites for more information.",
+        "I am not able to provide you the latest shopping information, but some of the best products in the market right now include the Apple iPhone, Samsung Galaxy, and Google Pixel.",
+        "The best prices and deals can vary depending on the store and the time of year, it's always a good idea to compare prices online on websites like Amazon, Walmart, and Best Buy before making a purchase.",
+        "Popular stores include Amazon, Walmart, Target, and Best Buy.",
+        "For online shopping the most popular websites are Amazon, Alibaba, and Flipkart"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "health",
+      "patterns": [
+        "What are the best exercises?",
+        "What is the best diet?",
+        "What are the best supplements?",
+        "What are the best vitamins?",
+        "What are the best alternative medicine?"
+      ],
+      "responses": [
+        "The best exercises depends on the individual's personal goals and physical abilities, but options can include cardio, strength training, yoga, and swimming.",
+        "The best diet for you depends on your personal nutritional needs, but a balanced diet with a variety of fruits, vegetables, lean protein, and whole grains is typically considered to be healthy.",
+        "I'm sorry, I am not able to check the current supplement information, but you can check on various health websites for more information.",
+        "I am not able to provide you the latest information on supplements, but it is important to consult with a healthcare professional before taking any supplements",
+        "Some popular alternative medicine include acupuncture, herbal medicine, and homeopathy"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "career",
+      "patterns": [
+        "What are the best jobs?",
+        "How can I advance in my career?",
+        "What are the best industries?",
+        "What are the best companies?",
+        "How can I get hired at a top company?"
+      ],
+      "responses": [
+        "The best jobs depend on an individual's skills, interests, and values, but some popular options include healthcare, technology, and finance.",
+        "Advancing in your career can be achieved through hard work, networking, and continuing education. It's also good to have a clear idea of where you want to go in your career and have a plan to get there.",
+        "Popular industries include healthcare, technology, finance, and the service sector.",
+        "Popular companies include Google, Amazon, and Apple.",
+        "To get hired at a top company, it is important to have a strong resume and cover letter, be well-prepared for interviews, and network with people in your desired field."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "I need a good laugh",
+        "Can you tell me a funny story?",
+        "What's the difference between a poorly dressed person on a unicycle and a well-dressed person on a bicycle?",
+        "Why was the math book sad?",
+        "Why was the computer cold?"
+      ],
+      "responses": [
+        "Attire",
+        "Because it had too many problems",
+        "Because it left its Windows open",
+        "Why was the math book sad? Because it had too many problems",
+        "Why don't scientists trust atoms? Because they make up everything",
+        "Why was the computer cold? It left its Windows open",
+        "Why was the computer always cold? It left its Windows open"
+      ],
+      "context_set": "joke"
+    },
+    {
+      "tag": "puns",
+      "patterns": [
+        "I love puns",
+        "Can you tell me a pun?",
+        "Give me a pun",
+        "Make a word play"
+      ],
+      "responses": [
+        "Why don't eggs tell jokes? They'd crack each other up",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why don’t scientists trust atoms? Because they make up everything.",
+        "Why did the scarecrow win an award? Because he was outstanding in his field"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "funny story",
+      "patterns": [
+        "Can you tell me a funny story?",
+        "Tell me something amusing",
+        "I need a good laugh"
+      ],
+      "responses": [
+        "Two guys stole a calendar. They got six months each.",
+        "A man walks into a bar with a steering wheel in one hand and a tail light in the other. The bartender looks at him and says, 'What's with the steering wheel and tail light?' The man responds, 'I got into a fight with my wife. She said I drive her crazy, so I proved her right.'",
+        "Why don’t scientists trust atoms? Because they make up everything."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "funny animals",
+      "patterns": [
+        "I love animals",
+        "Can you tell me a funny animal story?",
+        "Make me laugh with animal story",
+        "Tell me a joke about animals"
+      ],
+      "responses": [
+        "Why did the turtle cross the road? To get to the Shell station.",
+        "Why did the lion break up with his girlfriend? She was a cheetah.",
+        "Why don't elephants like to use cellphones? They're afraid of the mouse.",
+        "Why did the cow go to outer space? To see the moooon."
+      ],
+      "context_set": ""
     }
   ]
 }
