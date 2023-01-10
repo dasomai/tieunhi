@@ -43,6 +43,9 @@ python tieunhi.py
 "Tạm biệt bạn"
 "Cảm ơn"
 "Bạn có thể làm được gì?"
+"Hãy nói gì đó hài hước đi",
+"Thời tiết hôm nay thế nào?",
+"Công ty nào tốt nhất hiện nay?"
 
 ```
 Say nothing and the bot will disappear and say ```Javis``` to summon again
